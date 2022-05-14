@@ -14,7 +14,7 @@ file_id_dic = {'FaceMaskDetection':'1pJtohTc9NGNRzHj5IsySR39JIRPfkgD3',
               'NLP-QG':'1dPa5iLEv6WqeHZaYhNLPw5q_i5IGJzU9'}
 
 def download_file_from_google_drive(id_, destination):
-    url = f'https://drive.google.com/drive/folders/1JNbztdrz4Us-E_K1o8-rB9zpnR7V7dHX?usp=sharing'
+    url = f'https://docs.google.com/spreadsheets/d/13Dr87ueCSJeAJgXh-g14M5MjfRzyqEP_/edit?usp=sharing&ouid=108174567689826893017&rtpof=true&sd=true'
     output = destination
     gdown.download(url, output, quiet=False)
     print(f'{output} download complete!')
