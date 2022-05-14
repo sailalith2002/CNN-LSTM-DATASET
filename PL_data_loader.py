@@ -24,7 +24,7 @@ parser = argparse.ArgumentParser(description = 'data loader for PseudoLab Tutori
 parser.add_argument('--data', type = str, help = 'key for selecting data')
 
 args = parser.parse_args()
-source = https://docs.google.com/spreadsheets/d/13Dr87ueCSJeAJgXh-g14M5MjfRzyqEP_/edit?usp=sharing&ouid=108174567689826893017&rtpof=true&sd=true
+source = https://drive.google.com/drive/folders/1JNbztdrz4Us-E_K1o8-rB9zpnR7V7dHX?usp=sharing
 dest = https://drive.google.com/drive/folders/1An8G5ldDwbQ6t7-Myi1A4xF1Syad9cVp?usp=sharing
 
 download_file_from_google_drive(source,dest)
