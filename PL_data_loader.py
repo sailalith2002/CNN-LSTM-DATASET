@@ -14,7 +14,7 @@ file_id_dic = {'FaceMaskDetection':'1pJtohTc9NGNRzHj5IsySR39JIRPfkgD3',
               'NLP-QG':'1dPa5iLEv6WqeHZaYhNLPw5q_i5IGJzU9'}
 
 def download_file_from_google_drive(id_, destination):
-    url = f'https://docs.google.com/spreadsheets/d/13Dr87ueCSJeAJgXh-g14M5MjfRzyqEP_/edit?usp=sharing&ouid=108174567689826893017&rtpof=true&sd=true'
+    url = f'https://drive.google.com/uc?id={id_}'
     output = destination
     gdown.download(url, output, quiet=False)
     print(f'{output} download complete!')
@@ -24,5 +24,7 @@ parser = argparse.ArgumentParser(description = 'data loader for PseudoLab Tutori
 parser.add_argument('--data', type = str, help = 'key for selecting data')
 
 args = parser.parse_args()
+source = https://docs.google.com/spreadsheets/d/13Dr87ueCSJeAJgXh-g14M5MjfRzyqEP_/edit?usp=sharing&ouid=108174567689826893017&rtpof=true&sd=true
+dest = https://drive.google.com/drive/folders/1An8G5ldDwbQ6t7-Myi1A4xF1Syad9cVp?usp=sharing
 
-download_file_from_google_drive(id_=file_id_dic[args.data], destination=file_destinations[args.data])
+download_file_from_google_drive(source,dest)
